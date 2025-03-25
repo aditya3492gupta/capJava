@@ -1,5 +1,7 @@
 package capJava;
+
 import java.util.*;
+
 public class AlphaCheck {
 
 	public static void main(String[] args) {
@@ -9,13 +11,14 @@ public class AlphaCheck {
 		char ch = sc.next().charAt(0);
 		check(ch);
 	}
+
 	public static void check(char ch) {
-		if(ch == 'a' || ch == 'A' || ch == 'e' || ch =='E' || ch == 'i' || ch =='I' || ch == 'o' || ch =='O' || ch == 'U' || ch =='u') {
+		if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O'
+				|| ch == 'U' || ch == 'u') {
 			System.out.println("Vowel");
-		}
-		else
+		} else
 			System.out.println("Consonant");
-		
+
 	}
 
 }
