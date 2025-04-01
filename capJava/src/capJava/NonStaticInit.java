@@ -7,10 +7,10 @@ public class NonStaticInit {
 	public static void main(String[] args) {
 		System.out.println("in main");
 		new NonStaticInit();
-		System.out.println("===========");
-		new NonStaticInit();
-		System.out.println("===========");
-		new NonStaticInit();
+//		System.out.println("===========");
+//		new NonStaticInit();
+//		System.out.println("===========");
+//		new NonStaticInit();
 	}
 	{
 		System.out.println("hi1");

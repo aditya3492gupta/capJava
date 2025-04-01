@@ -20,4 +20,8 @@ public class NonStaticDemo {
 		System.out.println("no static block 2");
 		System.out.println(a);
 	}
+	static {
+		System.out.println("hi static");
+	}
+	
 }
