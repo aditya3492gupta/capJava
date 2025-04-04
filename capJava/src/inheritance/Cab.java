@@ -6,5 +6,5 @@ public class Cab {
 	public Cab(String type) {
 		this.type = type;
 	}
-	
+
 }

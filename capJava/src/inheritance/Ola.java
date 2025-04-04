@@ -23,18 +23,19 @@ public class Ola {
 		default:
 			System.out.println("Invalid Input");
 		}
-		if(cab instanceof Auto) {
-			Auto auto = (Auto)cab;
+		System.out.println((cab instanceof Object));
+		if (cab instanceof Auto) {
+//			System.out.println(cab.price); cannot use this because child class is upcasted and to access the methods and members of child class it needs to be downcasted
+			Auto auto = (Auto) cab;
 			System.out.println(auto.type);
 			System.out.println(auto.price);
-		}
-		else if(cab instanceof Sedan) {
-			Sedan sedan = (Sedan)cab;
+		} else if (cab instanceof Sedan) {
+			Sedan sedan = (Sedan) cab;
 			System.out.println(sedan.type);
 			System.out.println(sedan.price);
 		}
-		if(cab instanceof Bike) {
-			Bike bike = (Bike)cab;
+		if (cab instanceof Bike) {
+			Bike bike = (Bike) cab;
 			System.out.println(bike.type);
 			System.out.println(bike.price);
 		}
