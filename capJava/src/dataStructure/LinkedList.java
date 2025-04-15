@@ -67,7 +67,7 @@ public class LinkedList {
 		return true;
 	}
 
-//	remove node from last
+//	remove doubleNode from last
 	public boolean removeLast() {
 		if (isEmpty()) {
 			System.out.println("Empty list");
@@ -110,7 +110,7 @@ public class LinkedList {
 		return true;
 	}
 
-//	return the address of the node using the index
+//	return the address of the doubleNode using the index
 	public Node getNode(int index) {
 		if (isEmpty()) {
 			System.out.println("EMpty list");
@@ -121,6 +121,8 @@ public class LinkedList {
 			throw new ListIndexOutOfBoundsException();
 		}
 		int i = 0;
+		if(index == 0)
+			return head;
 		Node current = head;
 		Node prev = null;
 		while (i != index) {
@@ -177,12 +179,17 @@ public class LinkedList {
 	}
 }
 
-// structure of the node of the linked list
+// structure of the doubleNode of the linked list
 class Node {
 	int data;
 	Node next;
 
 	Node(int data) {
 		this.data = data;
+	}
+
+	@Override
+	public String toString() {
+		return "Node [data=" + data + ", next=" + next + "]";
 	}
 }
