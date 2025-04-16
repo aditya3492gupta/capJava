@@ -69,6 +69,8 @@ public class DoublyLinkedList {
 		}
 //		head.next.prev = null;
 		head = head.next;
+		if (head != null)
+			head.prev = null;
 		size--;
 		return true;
 	}
@@ -111,11 +113,14 @@ public class DoublyLinkedList {
 		}
 		int i = 0;
 		DoublyNode current = head;
-		while(i < index) {
+		while (i < index) {
 			current = current.next;
 			i++;
 		}
 		current.prev.next = current.next;
+		if (current.next != null) {
+			current.next.prev = current.prev;
+		}
 		current.next = null;
 		size--;
 		return true;
