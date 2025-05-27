@@ -1,0 +1,10 @@
+{
+	"name" : "aditya",
+	"age" : 22,
+	"email" : "aditya@gmail.com",
+	"add":{
+		"city" : "gkp",
+		"state" : "up"
+	},
+	"phoneNumber" : [45678,345678,3456782]
+}
